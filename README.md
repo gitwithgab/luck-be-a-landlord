@@ -1,1 +1,0 @@
-*Luck be a landlord
