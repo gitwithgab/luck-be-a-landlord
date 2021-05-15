@@ -10,14 +10,15 @@ const itemsController  = require("./controllers/ItemsController");
 
 const app = express();
 
-
+//This is middleware that will allow API to parse incoming
+//JSON data
 app.use(express.json());
 
 
-app.use("/items",itemsController);
+app.use("/item",itemsController);
 
 
-const PORT=3000;
+const PORT = process.env.PORT;
 app.listen(PORT,()=>{
    
     console.log(`Web Server is up and running on port ${PORT}`)
